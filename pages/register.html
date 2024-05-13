@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubeTagger</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="login">
+        <img class="logo" src="../svg/logo.svg" alt="logo TubeTagger">
+        <form action="#">
+            <div class="selecao">
+                <div class="nSelecionado left" id="profissional" onclick="profissionalF()">
+                    <p>Profissional</p>
+                </div>
+                <div class="selecionado rigth" id="paciente" onclick="pacienteF()">
+                    <p>Paciente</p>
+                </div>
+            </div>
+            <input id="cpf" class="input_login" type="text" placeholder="CPF">
+            <div class="div_senha">
+                <input id="senha1" class="input_login senha" type="password" placeholder="Senha">
+                <i class="bi bi-eye-fill" id="btn-senha1" onclick="mostrarSenha1()"></i>
+            </div>
+            <div class="div_senha">
+                <input id="senha2" class="input_login senha" type="password" placeholder="Confirmar senha">
+                <i class="bi bi-eye-fill" id="btn-senha2" onclick="mostrarSenha2()"></i>
+            </div>
+            <a href="homeM.html" id="M" class="redirect none">Entrar</a>
+            <a href="homeP.html" id="P" class="redirect block">Entrar</a>
+        </form>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>
